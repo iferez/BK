@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 136 136">
+  <g id="icono_documento_error" transform="translate(-155 -192)">
+    <circle id="Elipse_314" data-name="Elipse 314" cx="68" cy="68" r="68" transform="translate(155 192)" fill="#f7f7f7"/>
+    <g id="icono-documento-error" transform="translate(174 210)">
+      <g id="Grupo_3042" data-name="Grupo 3042" transform="translate(0 0)">
+        <rect id="Rectángulo_3229" data-name="Rectángulo 3229" width="107" height="105" fill="none"/>
+      </g>
+      <g id="Grupo_3129" data-name="Grupo 3129" transform="translate(20.828 14.677)">
+        <g id="Trazado_2611" data-name="Trazado 2611" transform="translate(20.435 -4.57)" fill="none">
+          <path d="M20.56,18.565H33.506L20.56,4.75Z" stroke="none"/>
+          <path d="M 31.19833183288574 17.56494140625 L 21.55999946594238 7.279586315155029 L 21.55999946594238 17.56494140625 L 31.19833183288574 17.56494140625 M 33.50587844848633 18.56494140625 L 20.55999946594238 18.56494140625 L 20.55999946594238 4.750001430511475 L 33.50587844848633 18.56494140625 Z" stroke="none" fill="#c62828"/>
+        </g>
+        <path id="Trazado_2612" data-name="Trazado 2612" d="M47.246,22.551a3.223,3.223,0,0,1-3.236-3.236V4.69H8.408A1.535,1.535,0,0,0,6.88,6.218v64.7a1.535,1.535,0,0,0,1.528,1.528h51.6a1.535,1.535,0,0,0,1.528-1.528V22.551Zm.629,30.267H20.006a2.907,2.907,0,1,1,0-5.814h27.87a2.907,2.907,0,1,1,0,5.814Zm0-13.665H20.006a2.907,2.907,0,1,1,0-5.814h27.87a2.907,2.907,0,0,1,0,5.814Z" transform="translate(-6.88 -4.69)" fill="none" stroke="#c62828" stroke-width="1"/>
+        <g id="ok" transform="translate(36.208 52.169)">
+          <rect id="Rectángulo_3229-2" data-name="Rectángulo 3229" width="27.084" height="26.084" transform="translate(0 0)" fill="#fff"/>
+          <g id="Grupo_3081" data-name="Grupo 3081" transform="translate(2.455 2.209)">
+            <ellipse id="Elipse_312" data-name="Elipse 312" cx="11.316" cy="11.315" rx="11.316" ry="11.315" fill="#2e7d33"/>
+            <path id="Trazado_3011" data-name="Trazado 3011" d="M138.71,1858.277l3.226,3.226,7.114-7.112" transform="translate(-132.383 -1846.848)" fill="none" stroke="#fff" stroke-width="1"/>
+          </g>
+        </g>
+        <g id="x" transform="translate(-115.644 -4081.577)">
+          <ellipse id="Elipse_313" data-name="Elipse 313" cx="11.315" cy="11.315" rx="11.315" ry="11.315" transform="translate(154.306 4136)" fill="#c62828"/>
+          <path id="Trazado_3021" data-name="Trazado 3021" d="M-5457.453,3453.614l10.2,10.194" transform="translate(5618.151 688.459)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+          <path id="Trazado_3022" data-name="Trazado 3022" d="M-5447.253,3453.614l-10.2,10.194" transform="translate(5618.152 688.459)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/icono-arg.css">
+
+    <title>Empresas</title>
+</head>
+
+<body>
+    <header id="header-ministerioDesarrollo">
+
+        <div class="container">
+            <div class="row">
+                <div id="headerColUno" class="col-4 d-flex align-items-center">
+                    <a href="#">
+                        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                    </a>
+                </div>
+                <div id="headerMid" class="col-4 d-flex align-items-center justify-content-center">
+                    <h2>BK 4.0</h2>
+                </div>
+                <div id="headerColDos" class="col-4 d-flex justify-content-end align-items-center userMenu">
+                    <a id="usuarioMenu" class="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li id="datosUsuario">
+                            <span class="fw-bold"> Nombre Usuario - </span>
+                            <span> 20-67465536-6 </span> <br>
+                            <span> usuario@produccion.gob.ar </span>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Cerrar la sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="menuHamburg">
+
+            <div class="dropend">
+                <button class="btn btn-hamburg" id="dropHamburg" data-bs-toggle="dropdown" data-bs-auto-close="false"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark d-none"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropHamburg">
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-house"></i></span> Inicio</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-building"></i></span> Empresas</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-folder-open"></i></span> Expedientes</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-share-from-square"></i></span> Envió novedades <br><span
+                                class="ms-4 ps-2">a AFIP</span></a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionPagos">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pagosCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-dollar-sign"></i></span> Pagos
+                                    </button>
+                                </h2>
+                                <div id="pagosCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionPagos">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-brands fa-deezer"></i></span> Productos</a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionBonos">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#bonosCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-money-check-dollar"></i></span>
+                                        Bonos
+                                    </button>
+                                </h2>
+                                <div id="bonosCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionBonos">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-bell"></i></span> Alertas</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-file-lines"></i></span> Reportes</a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionConfig">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#configCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-gear"></i></span> Configuración
+                                    </button>
+                                </h2>
+                                <div id="configCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionConfig">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-id-card"></i></span> Roles/Usuarios</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <section id="empresasInicio">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <h2>Empresas</h2>
+                    <button class="btn btn-agregar rounded-pill">Nueva empresa</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="empresasFiltros" class="bg-light py-4">
+            <div class="container">
+
+                <article id="filtrosColapsados">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="" class="form-label">CUIT</label>
+                                <input class="form-control" type="text" name="" id="" />
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label" for="">Desde</label>
+                                <input id="startDate" class="form-control" type="date" />
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label" for="">Hasta</label>
+                                <input id="endDate" class="form-control" type="date" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="" class="form-label">Estado</label>
+                                <select class="form-select" aria-label="">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">---</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 text-end mt-4">
+                                <span><button type="" class="btn btn-light-black rounded-pill">Limpiar
+                                        filtros</button></span>
+                                <span class="ms-4"><button type="" class="btn btn-success rounded-pill">Aplicar
+                                        filtros</button></span>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="tablasEmpresas" class="pt-4 pb-5">
+            <div class="container">
+
+
+                <p>Mostrar <span><input id="mostrarRegistrosDetalle" type="number" value="5"></span> registros</p>
+
+
+                <article class="row">
+                    <div class="col-12 table-responsive">
+
+                        <table class="table table-responsive table-striped table-style">
+                            <thead>
+                                <tr>
+                                    <th>CUIT <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                    <th>Razón Social <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                    <th>Fecha de inscripción <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                    <th>Estado <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20-12345678-5</td>
+                                    <td class="limitar" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Nombre de la empresa mas largo en caracteres">
+                                        Nombre de la empresa
+                                    </td>
+                                    <td>20/12/22</td>
+                                    <td>Pendiente inscripción</td>
+                                    <td>
+                                        <div class="dropstart">
+                                            <button type="button" class="btn" id="dropdownMenuLink"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-eye"></i>
+                                                        Ver detalle</a></li>
+                                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pencil"></i>
+                                                        Editar</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>20-12345678-5</td>
+                                    <td class="limitar" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Nombre de la empresa mas largo en caracteres">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, doloribus!
+                                    </td>
+                                    <td>20/12/22</td>
+                                    <td>Pendiente inscripción</td>
+                                    <td>
+                                        <div class="dropstart">
+                                            <button type="button" class="btn" id="dropdownMenuLink"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-eye"></i>
+                                                        Ver detalle</a></li>
+                                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pencil"></i>
+                                                        Editar</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <p id="contadorTabla">Mostrando registros del 1 al 5 de un total de <span class="fbold"> 20
+                            registros</span>.</p>
+
+                    <!-- Paginador estatico -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center mt-3">
+                            <li class="page-item px-2">
+                                <a class="page-link bg-ministerio-gris" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">
+                                        <i class="fa-solid fa-angle-left"></i> </span>
+                                </a>
+                            </li>
+                            <li class="page-item px-2"><a class="page-link rounded-3 bg-filtro text-white"
+                                    href="#">1</a>
+                            </li>
+                            <li class="page-item px-2"><a class="page-link rounded-3" href="#">2</a></li>
+                            <li class="page-item px-2"><a class="page-link rounded-3" href="#">3</a></li>
+                            <li class="page-item px-2">
+                                <a class="page-link border-0" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section id="datos">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="datosAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-datos" aria-expanded="false" aria-controls="flush-datos">
+                                Datos Generales
+                            </button>
+                        </h2>
+                        <div id="flush-datos" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#datosAccordion">
+                            <div class="accordion-body">
+
+                                <article class="row justify-content-center">
+                                    <div class="col-8">
+                                        <form action="">
+                                            <label class="form-label" for="">CUIT </label>
+                                            <div class="d-flex">
+                                                <input class="form-control" type="number" name="" id="inputCuit">
+                                                <button type="button"
+                                                    class="btn btn-primary rounded-pill ms-3">Verificar</button>
+                                            </div>
+                                            <div id="invalidCuit" class="invalid-feedback">
+                                                El número de CUIT ingresado es incorrecto
+                                            </div>
+                                            <br>
+                                            <label class="form-label" for="">Razón Social </label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                            <label class="form-label" for="">Nombre comercial </label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                            <label class="form-label" for="">Tipo societario </label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                            <label class="form-label" for="">Actividad principal </label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                            <label class="form-label" for="">Sector productivo </label>
+                                            <select class="form-select" aria-label="Sector productivo">
+                                                <option selected>Seleccione un sector productivo</option>
+                                                <option value="1">xxx</option>
+                                            </select>
+                                            <br>
+                                            <label class="form-label" for="">Inicio de actividades </label>
+                                            <input class="form-control" type="date" id="">
+                                            <br>
+                                            <label class="form-label" for="">¿Inscripto en Registro PyME?</label>
+                                            <br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inscripto" id=""
+                                                    value="" checked>
+                                                <label class="form-check-label" for="">PyME</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inscripto" id=""
+                                                    value="">
+                                                <label class="form-check-label" for="">No PyME</label>
+                                            </div>
+                                            <br>
+
+                                            <div class="text-center my-5">
+                                                <button class="btn btn-secondary rounded-pill">Cancelar</button>
+                                                <button class="btn btn-success rounded-pill ms-3">Grabar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION DOMICILIOS CON FORMULARIO Y TABLA -->
+        <section id="domicilios">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="domiciliosAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-domicilios" aria-expanded="false"
+                                aria-controls="flush-domicilios">
+                                Domicilios
+                            </button>
+                        </h2>
+                        <div id="flush-domicilios" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#domiciliosAccordion">
+                            <div class="accordion-body">
+
+                                <div class="text-end mt-2 mb-4">
+                                    <button class="btn btn-agregar rounded-pill" data-bs-toggle="modal"
+                                        data-bs-target="#nuevoDomicilio">
+                                        Nuevo domicilio
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade modalExpediente" id="nuevoDomicilio" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="nuevoDomicilioLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="text-end">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="nuevoExpedienteLabel">
+                                                    Para generar un nuevo domicilio completá el siguiente formulario:
+                                                </h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <label class="form-label" for="">Tipo de domicilio </label>
+                                                    <select class="form-select" aria-label="Tipo de domicilio">
+                                                        <option selected>Seleccione un tipo de domicilio</option>
+                                                        <option value="1">xxx</option>
+                                                    </select>
+                                                    <br>
+                                                    <label class="form-label" for="">Domicilio de la empresa</label>
+                                                    <input class="form-control" type="text" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Código postal</label>
+                                                    <input class="form-control" type="number" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Provincia</label>
+                                                    <select class="form-select" aria-label="Provincia">
+                                                        <option selected>Seleccione una provincia</option>
+                                                        <option value="1">xxx</option>
+                                                    </select>
+                                                    <br>
+                                                    <label class="form-label" for="">Partido/Departamento</label>
+                                                    <select class="form-select" aria-label="Partido Departamento">
+                                                        <option selected>Seleccione un partido / departamento</option>
+                                                        <option value="1">xxx</option>
+                                                    </select>
+                                                    <br>
+                                                    <label class="form-label" for="">Localidad/Municipio</label>
+                                                    <select class="form-select" aria-label="Localidad Municipio">
+                                                        <option selected>Seleccione una localidad / municipio</option>
+                                                        <option value="1">xxx</option>
+                                                    </select>
+                                                    <br>
+                                                    <label class="form-label mb-0" for="">Télefono</label>
+                                                    <p class="my-1">Incluí el <span class="color-azul">código de
+                                                            área</span> de tu localidad</p>
+                                                    <input class="form-control" type="number" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Correo electrónico</label>
+                                                    <input class="form-control" type="email" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">¿Este domicilio corresponde al
+                                                        establecimiento fabril principal ?</label>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="name" id=""
+                                                            value="option1">
+                                                        <label class="form-check-label" for="si">Sí</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input  ms-5" type="radio" name="name"
+                                                            id="" value="option2">
+                                                        <label class="form-check-label" for="no">No</label>
+                                                    </div>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary rounded-pill"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit"
+                                                    class="btn btn-success rounded-pill">Crear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 table-responsive">
+                                    <table class="table table-responsive table-striped table-style">
+                                        <thead>
+                                            <tr>
+                                                <th>Tipo de domicilio <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Domicilio <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                <th>Departamento <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Localidad <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                <th>Código Postal <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tipo xxx</td>
+                                                <td>Domicilio xxx</td>
+                                                <td>Departamento xxx</td>
+                                                <td>Localidad xxx</td>
+                                                <td>Código Postal xxx</td>
+                                                <td>
+                                                    <div class="dropstart">
+                                                        <button type="button" class="btn" id="dropdownMenuLink"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-eye"></i>
+                                                                    Ver detalle</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-pencil"></i>
+                                                                    Editar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION PERSONAS CON FORMULARIO Y TABLA -->
+        <section id="personas">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="personasAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-personas" aria-expanded="false" aria-controls="flush-personas">
+                                Personas
+                            </button>
+                        </h2>
+                        <div id="flush-personas" class="accordion-collapse collapse" aria-labelledby="flush-Three"
+                            data-bs-parent="#personasAccordion">
+                            <div class="accordion-body">
+
+                                <div class="text-end mt-2 mb-4">
+                                    <button class="btn btn-agregar rounded-pill" data-bs-toggle="modal"
+                                        data-bs-target="#nuevoPersonas">
+                                        Nueva persona
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade modalExpediente" id="nuevoPersonas" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="nuevoPersonasLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="text-end">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="nuevoExpedienteLabel">
+                                                    Para generar una nueva persona completá el siguiente formulario:
+                                                </h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <label class="form-label" for="">Cargo</label>
+                                                    <input class="form-control" type="text" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Nombre y apellido</label>
+                                                    <input class="form-control" type="text" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">CUIL</label>
+                                                    <input class="form-control" type="number" name="" id="">
+                                                    <br>
+                                                    <label class="form-label mb-0" for="">Télefono</label>
+                                                    <p class="my-1">Incluí el <span class="color-azul">código de
+                                                            área</span> de tu localidad</p>
+                                                    <input class="form-control" type="number" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Correo electrónico</label>
+                                                    <input class="form-control" type="email" name="" id="">
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary rounded-pill"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit"
+                                                    class="btn btn-success rounded-pill">Crear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 table-responsive">
+                                    <table class="table table-responsive table-striped table-style">
+                                        <thead>
+                                            <tr>
+                                                <th>Cargo <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Nombre y apellido <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>CUIL <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Teléfono <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                <th>Correo electrónico <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Cargo xxx</td>
+                                                <td>Nombre xxx</td>
+                                                <td>CUIL xxx</td>
+                                                <td>Teléfono xxx</td>
+                                                <td>Correo xxx</td>
+                                                <td>
+                                                    <div class="dropstart">
+                                                        <button type="button" class="btn" id="dropdownMenuLink"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-eye"></i>
+                                                                    Ver detalle</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-pencil"></i>
+                                                                    Editar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION EXPEDIENTES CON FORMULARIO Y TABLA -->
+        <section id="expedientes">
+            <div class="container accordion-style mb-5 pb-5">
+
+                <div class="accordion accordion-flush" id="expedientesAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-expedientes" aria-expanded="false"
+                                aria-controls="flush-expedientes">
+                                Expedientes
+                            </button>
+                        </h2>
+                        <div id="flush-expedientes" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#expedientesAccordion">
+                            <div class="accordion-body">
+
+                                <div class="text-end mt-2 mb-4">
+                                    <button class="btn btn-agregar rounded-pill" data-bs-toggle="modal"
+                                        data-bs-target="#nuevoExpediente">
+                                        Nuevo expediente
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade modalExpediente" id="nuevoExpediente" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="nuevoExpedienteLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="text-end">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="nuevoExpedienteLabel">
+                                                    Para generar un nuevo expediente completá el siguiente formulario:
+                                                </h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <label class="form-label" for="">Tipo de expediente </label>
+                                                    <select class="form-select" aria-label="Tipo de expediente">
+                                                        <option selected>Seleccione un tipo de expediente</option>
+                                                        <option value="1">xxx</option>
+                                                    </select>
+                                                    <br>
+                                                    <label class="form-label" for="">Número de expediente </label>
+                                                    <input class="form-control" type="number" name="" id="">
+                                                    <div id="" class="invalid-feedback">
+                                                        El número de expediente ya existe.
+                                                    </div>
+                                                    <br>
+                                                    <label class="form-label" for="">Fecha </label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary rounded-pill"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit"
+                                                    class="btn btn-success rounded-pill">Crear</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 table-responsive">
+                                    <table class="table table-responsive table-striped table-style">
+                                        <thead>
+                                            <tr>
+                                                <th>Tipo de Expediente <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Número de Expediente <i
+                                                        class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                <th>Fecha de inicio <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Estado <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Solicitud de inscripción</td>
+                                                <td>123456/XX</td>
+                                                <td>01/07/2022</td>
+                                                <td>Pendiente inscripción</td>
+                                                <td>
+                                                    <div class="dropstart">
+                                                        <button type="button" class="btn" id="dropdownMenuLink"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-eye"></i>
+                                                                    Ver detalle</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-pencil"></i>
+                                                                    Editar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Solicitud de inscripción</td>
+                                                <td>123456/XX</td>
+                                                <td>01/07/2022</td>
+                                                <td class="color-verde fbold">Aprobado</td>
+                                                <td>
+                                                    <div class="dropstart">
+                                                        <button type="button" class="btn" id="dropdownMenuLink"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-eye"></i>
+                                                                    Ver detalle</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i
+                                                                        class="fa-solid fa-pencil"></i>
+                                                                    Editar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MANTENER EL LAYOUT PARA LOS MENU Y DROPDOWN -->
+        <div id="layoutblack" class="modal-backdrop fade d-none show"></div>
+
+    </main>
+
+
+    <footer id="footer-ministerioDesarrollo">
+        <div class="container">
+            <div class="row">
+                <div id="footerColUno" class="col-8 d-flex align-items-center">
+                    <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                </div>
+                <div id="footerColDos" class="col-4 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d741def0c1.js" crossorigin="anonymous"></script>
+    <script src="js/menulateral.js"></script>
+
+</body>
+
+</html>

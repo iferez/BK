@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/icono-arg.css">
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header id="header-ministerioDesarrollo">
+
+        <div class="container">
+            <div class="row">
+                <div id="headerColUno" class="col-4 d-flex align-items-center">
+                    <a href="#">
+                        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                    </a>
+                </div>
+                <div id="headerMid" class="col-4 d-flex align-items-center justify-content-center">
+                    <h2>BK 4.0</h2>
+                </div>
+                <div id="headerColDos" class="col-4 d-flex justify-content-end align-items-center userMenu">
+                    <a id="usuarioMenu" class="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li id="datosUsuario">
+                            <span class="fw-bold"> Nombre Usuario - </span>
+                            <span> 20-67465536-6 </span> <br>
+                            <span> usuario@produccion.gob.ar </span>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Cerrar la sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="dashboardInicio">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Te damos la bienvenida a BK 4.0</h3>
+                </div>
+
+                <article class="row">
+                    <div class="col-3">
+                        <div class="card mb-3">
+                            <a href="">
+                                <div
+                                    class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-building"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Empresas</h5>
+                                </div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card mb-3">
+                            <a href="">
+                                <div
+                                    class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-folder-open"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Expedientes</h5>
+                                </div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card mb-3">
+                            <a href="">
+                                <div
+                                    class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-share-from-square"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Envió novedades <br> a AFIP</h5>
+                                </div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div id="cardPagos" class="card mb-3">
+                            <div
+                                class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="dropdown">
+                                    <button class="btn-title" type="button" id="dropdownMenuPagos"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Pagos <i id="flechaPagos" class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuPagos">
+                                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card mb-3">
+                            <a href="">
+                                <div
+                                    class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-deezer"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Productos</h5>
+                                </div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div id="cardBonos" class="card mb-3">
+                            <div
+                                class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="dropdown">
+                                    <button class="btn-title" type="button" id="dropdownMenuBonos"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Bonos <i id="flechaBonos" class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuBonos">
+                                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card mb-3">
+                            <a href="">
+                                <div
+                                    class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Alertas</h5>
+                                </div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div id="cardConfig" class="card mb-3">
+                            <div
+                                class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="dropdown">
+                                    <button class="btn-title" type="button" id="dropdownMenuConfig"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Configuración <i id="flechaConfig" class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuConfig">
+                                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card mb-3">
+                            <a href="">
+                                <div
+                                    class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Reportes</h5>
+                                </div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card mb-3">
+                            <a href="">
+                                <div
+                                    class="card-header bg-card text-white border-card d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-id-card"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Roles/Usuarios</h5>
+                                </div>
+                                <div class="card-footer"></div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </article>
+
+
+            </div>
+        </section>
+
+        <!-- MANTENER EL LAYOUT PARA LOS MENU Y DROPDOWN -->
+        <div id="layoutblack" class="modal-backdrop fade d-none show"></div>
+
+    </main>
+
+
+    <footer id="footer-ministerioDesarrollo">
+        <div class="container">
+            <div class="row">
+                <div id="footerColUno" class="col-8 d-flex align-items-center">
+                    <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                </div>
+                <div id="footerColDos" class="col-4 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d741def0c1.js" crossorigin="anonymous"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

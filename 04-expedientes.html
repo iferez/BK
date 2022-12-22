@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/icono-arg.css">
+
+    <title>Expedientes</title>
+</head>
+
+<body>
+    <header id="header-ministerioDesarrollo">
+
+        <div class="container">
+            <div class="row">
+                <div id="headerColUno" class="col-4 d-flex align-items-center">
+                    <a href="#">
+                        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                    </a>
+                </div>
+                <div id="headerMid" class="col-4 d-flex align-items-center justify-content-center">
+                    <h2>BK 4.0</h2>
+                </div>
+                <div id="headerColDos" class="col-4 d-flex justify-content-end align-items-center userMenu">
+                    <a id="usuarioMenu" class="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li id="datosUsuario">
+                            <span class="fw-bold"> Nombre Usuario - </span>
+                            <span> 20-67465536-6 </span> <br>
+                            <span> usuario@produccion.gob.ar </span>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Cerrar la sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="menuHamburg">
+
+            <div class="dropend">
+                <button class="btn btn-hamburg" id="dropHamburg" data-bs-toggle="dropdown" data-bs-auto-close="false"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark d-none"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropHamburg">
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-house"></i></span> Inicio</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-building"></i></span> Empresas</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-folder-open"></i></span> Expedientes</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-share-from-square"></i></span> Envió novedades <br><span
+                                class="ms-4 ps-2">a AFIP</span></a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionPagos">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pagosCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-dollar-sign"></i></span> Pagos
+                                    </button>
+                                </h2>
+                                <div id="pagosCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionPagos">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-brands fa-deezer"></i></span> Productos</a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionBonos">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#bonosCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-money-check-dollar"></i></span>
+                                        Bonos
+                                    </button>
+                                </h2>
+                                <div id="bonosCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionBonos">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-bell"></i></span> Alertas</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-file-lines"></i></span> Reportes</a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionConfig">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#configCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-gear"></i></span> Configuración
+                                    </button>
+                                </h2>
+                                <div id="configCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionConfig">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-id-card"></i></span> Roles/Usuarios</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <section id="expedienteInicio">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <h2>Expediente</h2>
+                    <span>123457/XX</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="expedienteDatos" class="bg-light pt-4 pb-2">
+            <div class="container">
+
+                <article class="row">
+                    <div class="col-4">
+                        <p>Tipo: <span>Solicitud de inscripción</span></p>
+                    </div>
+                    <div class="col-4">
+                        <p>Fecha de inicio: <span>01/07/2022</span></p>
+                    </div>
+                    <div class="col-4">
+                        <p>Estado: <span class="color-ministerio fbold">Pendiente de aprobación</span></p>
+                    </div>
+                </article>
+
+                <article class="row">
+                    <div class="col-4">
+                        <p>CUIT: <span>30-12345678-9</span></p>
+                    </div>
+                    <div class="col-4">
+                        <p>Razón Social: <span>Empresa Modelo S.A.</span></p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION DATOS -->
+        <section id="accordionDatos">
+            <div class="container accordion-style mt-5">
+
+                <div class="accordion accordion-flush" id="datosAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-datos" aria-expanded="false" aria-controls="flush-datos">
+                                Datos Generales
+                            </button>
+                        </h2>
+                        <div id="flush-datos" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                            data-bs-parent="#datosAccordion">
+                            <div class="accordion-body">
+                                <form action="">
+                                    <article class="row justify-content-center px-5 py-3">
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Tipo de expediente</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Número de expediente</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Fecha de inicio</label>
+                                            <input class="form-control" type="date" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Número de RUMP</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                        </div>
+                                        <p class="fbold mt-5 mb-4 h6">Declaro bajo juramento que se encuentran
+                                            presentados
+                                            y actualizados en el expediente de RUMP indicados los siguientes documentos:
+                                        </p>
+                                        <div class="col-6 d-flex align-items-center">
+                                            <p>a) Copia del contrato social o estatuto,</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label" for="">Fecha de presentación</label>
+                                            <input class="form-control" type="date" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label" for="">Número de IF</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-6 d-flex align-items-center">
+                                            <p>b) Última acta de designación de autoridades y distribución de cargos
+                                                inscripta en el registro público correspondiente; y,</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input class="form-control" type="date" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-3">
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-6 d-flex align-items-center">
+                                            <p>c) Los últimos estados contables.</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <input class="form-control" type="date" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-3">
+                                            <input class="form-control" type="text" name="" id="">
+                                            <br>
+                                        </div>
+
+
+                                        <div class="text-center my-5">
+                                            <button class="btn btn-secondary rounded-pill">Cancelar</button>
+                                            <button class="btn btn-success rounded-pill ms-3">Grabar</button>
+                                        </div>
+                                    </article>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION FACTURACION -->
+        <section id="accordionFacturacion">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="facturacionAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-facturacion" aria-expanded="false"
+                                aria-controls="flush-facturacion">
+                                Facturación
+                            </button>
+                        </h2>
+                        <div id="flush-facturacion" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#facturacionAccordion">
+                            <div class="accordion-body p-5">
+
+                                <div class="shadow-md px-cards">
+                                    <article class="row text-center">
+                                        <div id="card-datos" class="col-6 datos-style">
+                                            Datos Generales
+                                        </div>
+                                        <div id="card-resultados" class="col-6 resultados-style">
+                                            Resultados
+                                        </div>
+                                    </article>
+
+                                    <!-- CONTENEDOR DE DATOS GENERALES -->
+                                    <div id="contenido-datosgenerales">
+                                        <article class="row justify-content-end mt-4">
+                                            <div class="col-4">
+                                                <label class="form-label" for="">Fecha de presentación</label>
+                                                <input id="" class="form-control" type="date" />
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="" class="form-label">N° IF</label>
+                                                <input class="form-control" type="text" name="" id="" />
+                                            </div>
+                                        </article>
+
+                                        <div class="bg-gris mt-4">
+                                            <article class="row justify-content-center">
+                                                <div class="col-8 my-4">
+                                                    <h4 class="ventas-declaradas">Ventas declaradas</h4>
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <label for="" class="form-label">Seleccionar archivo de
+                                                                facturación</label>
+                                                            <select class="form-select" aria-label="">
+                                                                <option selected>Seleccione</option>
+                                                                <option value="1">---</option>
+                                                            </select>
+                                                            <button type="button" class="btn btn-masInfo mt-2 mb-3"
+                                                                data-bs-container="body" data-bs-toggle="popover"
+                                                                data-bs-placement="bottom" data-bs-trigger="focus"
+                                                                title="Requerimientos"
+                                                                data-bs-content="Tipos de archivos permitidos: .xls .xlsx">
+                                                                <i class="fas fa-question-circle"></i> Más información
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <button class="btn btn-agregar rounded-pill mt-agregar">
+                                                                Importar
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <label for="" class="form-label">Código de
+                                                                identificación</label>
+                                                            <input class="form-control" type="text" name="" id="" />
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <button class="btn btn-agregar rounded-pill mt-agregar">
+                                                                Verificar
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="mt-4">
+                                                    <p class="fsemibold">Período determinado</p>
+
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label class="form-label" for="">Desde</label>
+                                                            <input id="" class="form-control" type="date" />
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="form-label" for="">Hasta</label>
+                                                            <input id="" class="form-control" type="date" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="bg-gris mt-3">
+                                            <article class="row justify-content-center">
+                                                <div class="col-8 my-4">
+                                                    <h4 class="ventas-declaradas">Ventas registradas en RCEL</h4>
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                            <label for="" class="form-label">Seleccionar archivo de
+                                                                ventas
+                                                                desde
+                                                                RCEL</label>
+                                                            <select class="form-select" aria-label="">
+                                                                <option selected>Seleccione</option>
+                                                                <option value="1">---</option>
+                                                            </select>
+                                                            <button type="button" class="btn btn-masInfo mt-2"
+                                                                data-bs-container="body" data-bs-toggle="popover"
+                                                                data-bs-placement="bottom" data-bs-trigger="focus"
+                                                                title="Requerimientos"
+                                                                data-bs-content="Tipos de archivos permitidos: .xls .xlsx">
+                                                                <i class="fas fa-question-circle"></i> Más información
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <button class="btn btn-agregar rounded-pill mt-agregar">
+                                                                Importar
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="text-center my-3">
+                                            <button class="btn btn-success rounded-pill">Comparar</button>
+                                        </div>
+
+                                        <article id="tablaDatos" class="row py-4">
+                                            <div class="col-8 table-responsive">
+                                                <table class="table table-responsive">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Concepto</th>
+                                                            <th>Declarado</th>
+                                                            <th>S/interfaz</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="borde-gris">Cantidad de comprobantes</td>
+                                                            <td> 0 </td>
+                                                            <td> 0 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="borde-verde">Total de ventas</td>
+                                                            <td> 0 </td>
+                                                            <td> 0 </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <table class="table table-responsive">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Concepto</th>
+                                                            <th>Monto</th>
+                                                            <th>%</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="borde-gris">Grupo 1</td>
+                                                            <td> 0 </td>
+                                                            <td> 0 </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="borde-rojo">Grupo 2</td>
+                                                            <td> 0 </td>
+                                                            <td> 0 </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-4 text-center">
+                                                <img src="img/icono_documento.svg" class="mt-5" alt="Documento">
+                                                <!-- IMAGEN EN CASO APROBADO 
+                                                <img src="img/icono_documento_ok.svg" class="mt-5" alt="Aprobada"> -->
+                                                <!-- IMAGEN EN CASO RECHAZADO 
+                                                <img src="img/icono_documento_error.svg" class="mt-5" alt="Rechazada"> -->
+                                            </div>
+                                        </article>
+
+                                    </div>
+
+                                    <!-- CONTENEDOR DE RESULTADOS -->
+                                    <div id="contenido-resultados" class="d-none">
+
+                                        <article class="row mt-5">
+                                            <div class="col-4">
+                                                <label class="form-label" for="">Estado </label>
+                                                <select class="form-select" aria-label="">
+                                                    <option selected>Todos</option>
+                                                    <option value="1">xxx</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label class="form-label" for="">Tipo </label>
+                                                <select class="form-select" aria-label="">
+                                                    <option selected>Todos</option>
+                                                    <option value="1">xxx</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label class="form-label" for="">Grupo </label>
+                                                <select class="form-select" aria-label="">
+                                                    <option selected>Todos</option>
+                                                    <option value="1">xxx</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-3 mt-4">
+                                                <label class="form-label" for="">Desde </label>
+                                                <input class="form-control" type="date" id="">
+                                            </div>
+                                            <div class="col-3 mt-4">
+                                                <label class="form-label" for="">Hasta </label>
+                                                <input class="form-control" type="date" id="">
+                                            </div>
+                                            <div class="col-3 mt-4">
+                                                <button type=""
+                                                    class="btn btn-light-black rounded-pill mt-agregar">Limpiar
+                                                    filtros</button>
+                                            </div>
+                                            <div class="col-3 mt-4">
+                                                <button type="" class="btn btn-success rounded-pill mt-agregar">Aplicar
+                                                    filtros</button>
+                                            </div>
+                                        </article>
+
+                                        <article class="row mb-5">
+                                            <div class="col-12 table-responsive mt-5 mb-3">
+
+                                                <p>Mostrar <span><input id="mostrarRegistrosDetalle" type="number"
+                                                            value="5"></span> registros</p>
+
+                                                <table class="table table-responsive table-striped table-style nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Estado <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Grupo <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Fecha <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Tipo <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Punto de venta <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>N° de comprobante <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>CUIT comprador <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Comprador <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Monto total en pesos <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Moneda de emisión <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Tipo de cambio <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Imputación <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Razón Social <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>CAE <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Vencimiento CAE <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Importe total <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Estado xxx </td>
+                                                            <td>Grupo xxx </td>
+                                                            <td>Fecha xxx </td>
+                                                            <td>Tipo xxx </td>
+                                                            <td>Punto de venta xxx </td>
+                                                            <td>N° de comprobante xxx </td>
+                                                            <td>CUIT comprador xxx </td>
+                                                            <td>Comprador xxx </td>
+                                                            <td>Monto total en pesos xxx </td>
+                                                            <td>Moneda de emisión xxx </td>
+                                                            <td>Tipo de cambio xxx </td>
+                                                            <td>Imputación xxx </td>
+                                                            <td>Razón Social xxx </td>
+                                                            <td>CAE xxx </td>
+                                                            <td>Vencimiento CAE xxx </td>
+                                                            <td>Importe total xxx </td>
+                                                            <td>
+                                                                <div class="dropstart">
+                                                                    <button type="button" class="btn"
+                                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i
+                                                                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                                    <ul class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink">
+                                                                        <li><a class="dropdown-item" href="#"><i
+                                                                                    class="fa-solid fa-eye"></i>
+                                                                                Ver detalle</a></li>
+                                                                        <li><a class="dropdown-item" href="#"><i
+                                                                                    class="fa-solid fa-pencil"></i>
+                                                                                Editar</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Estado xxx </td>
+                                                            <td>Grupo xxx </td>
+                                                            <td>Fecha xxx </td>
+                                                            <td>Tipo xxx </td>
+                                                            <td>Punto de venta xxx </td>
+                                                            <td>N° de comprobante xxx </td>
+                                                            <td>CUIT comprador xxx </td>
+                                                            <td>Comprador xxx </td>
+                                                            <td>Monto total en pesos xxx </td>
+                                                            <td>Moneda de emisión xxx </td>
+                                                            <td>Tipo de cambio xxx </td>
+                                                            <td>Imputación xxx </td>
+                                                            <td>Razón Social xxx </td>
+                                                            <td>CAE xxx </td>
+                                                            <td>Vencimiento CAE xxx </td>
+                                                            <td>Importe total xxx </td>
+                                                            <td>
+                                                                <div class="dropstart">
+                                                                    <button type="button" class="btn"
+                                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i
+                                                                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                                    <ul class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink">
+                                                                        <li><a class="dropdown-item" href="#"><i
+                                                                                    class="fa-solid fa-eye"></i>
+                                                                                Ver detalle</a></li>
+                                                                        <li><a class="dropdown-item" href="#"><i
+                                                                                    class="fa-solid fa-pencil"></i>
+                                                                                Editar</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <p id="contadorTabla">Mostrando registros del 1 al 5 de un total de <span
+                                                    class="fbold"> 20
+                                                    registros</span>.</p>
+
+                                            <!-- Paginador estatico -->
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center mt-3">
+                                                    <li class="page-item px-2">
+                                                        <a class="page-link bg-ministerio-gris" href="#"
+                                                            aria-label="Previous">
+                                                            <span aria-hidden="true">
+                                                                <i class="fa-solid fa-angle-left"></i> </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item px-2"><a
+                                                            class="page-link rounded-3 bg-filtro text-white"
+                                                            href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item px-2"><a class="page-link rounded-3"
+                                                            href="#">2</a></li>
+                                                    <li class="page-item px-2"><a class="page-link rounded-3"
+                                                            href="#">3</a></li>
+                                                    <li class="page-item px-2">
+                                                        <a class="page-link border-0" href="#" aria-label="Next">
+                                                            <span aria-hidden="true"><i
+                                                                    class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                        </article>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION NOMINA -->
+        <section id="accordionNomina">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="nominaAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-nomina" aria-expanded="false" aria-controls="flush-nomina">
+                                Nómina de empleados
+                            </button>
+                        </h2>
+                        <div id="flush-nomina" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                            data-bs-parent="#nominaAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION LABORAL -->
+        <section id="accordionLaboral">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="laboralAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-laboral" aria-expanded="false" aria-controls="flush-laboral">
+                                Costo laboral
+                            </button>
+                        </h2>
+                        <div id="flush-laboral" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                            data-bs-parent="#laboralAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION VERIFICACIONES -->
+        <section id="accordionVerificaciones">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="verificacionesAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-verificaciones" aria-expanded="false"
+                                aria-controls="flush-verificaciones">
+                                Otras verificaciones
+                            </button>
+                        </h2>
+                        <div id="flush-verificaciones" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#verificacionesAccordion">
+                            <div class="accordion-body">
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Deuda Sindical</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <hr class="mb-4">
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Sindicato</label>
+                                                    <select class="form-select" aria-label="Sindicato">
+                                                        <option selected>Seleccione un sindicato</option>
+                                                        <option value="1">xxx</option>
+                                                    </select>
+                                                    <br>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Fecha libre deuda</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">REPSAL</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Constancia de habilitación del establecimiento
+                                                        y/o pago de la tasa municipal industrial</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Certificación contable porcentaje de facturación
+                                                        declarado</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <hr class="mb-4">
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Total declarado Grupo 1</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Total declarado Grupo 2</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Total declarado Grupo 3</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Porcentaje facturación Art. 2.a
+                                                        Dto.379/01</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Nombre y apellido del
+                                                        profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Matrícula del profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Certificación de ingeniero independiente sobre
+                                                        el carácter de bienes de capital</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <hr class="mb-4">
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Nombre y apellido del
+                                                        profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Matrícula del profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Certificación contable cumplimiento del
+                                                        requisito de costo laboral</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <hr class="mb-4">
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Nombre y apellido del
+                                                        profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Matrícula del profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Certificación contable sobre nómina de empleados
+                                                    </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <hr class="mb-4">
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Nombre y apellido del
+                                                        profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">Matrícula del profesional</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Identificación de cobro de bono durante los
+                                                        últimos tres años</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Fecha de presentación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label class="form-label" for="">Número de IF</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <hr class="mb-4">
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Número de expediente del último
+                                                        bono</label>
+                                                    <input class="form-control" type="text" id="">
+                                                    <br>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Fecha del último bono
+                                                        percibido</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center">
+                                        <div class="col-10 my-4">
+                                            <div class="row">
+                                                <div class="col-6 d-flex align-items-center">
+                                                    <p class="h6 fbold">Cumplimiento con las obligaciones impositivas y
+                                                        previsionales</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label class="form-label" for="">Fecha de la última
+                                                        verificación</label>
+                                                    <input class="form-control" type="date" id="">
+                                                    <br>
+                                                </div>
+                                                <hr class="mb-4">
+                                                <div class="col-12">
+                                                    <label class="form-label" for="">¿Registra deuda?</label>
+                                                    <br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="name" id=""
+                                                            value="" checked>
+                                                        <label class="form-check-label" for="">Si</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input ms-5" type="radio" name="name"
+                                                            id="" value="">
+                                                        <label class="form-check-label" for="">No</label>
+                                                    </div>
+                                                    <br>
+                                                    <div class="text-end">
+                                                        <button class="btn btn-agregar rounded-pill">Verificar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="text-center my-4 ">
+                                    <button class="btn btn-secondary rounded-pill">Cancelar</button>
+                                    <button class="btn btn-success rounded-pill ms-3">Grabar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION ADMINISTRATIVO -->
+        <section id="accordionAdministrativo">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="administrativoAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-administrativo" aria-expanded="false"
+                                aria-controls="flush-administrativo">
+                                Acto administrativo
+                            </button>
+                        </h2>
+                        <div id="flush-administrativo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#administrativoAccordion">
+                            <div class="accordion-body">
+                                <form action="">
+                                    <article class="row justify-content-center px-5 py-3">
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Fecha del acto</label>
+                                            <input class="form-control" type="date" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Fecha de inscripción</label>
+                                            <input class="form-control" type="date" name="" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="">Número de IF</label>
+                                            <input class="form-control" type="text" id="">
+                                            <br>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="">Resolución</label>
+                                            <select class="form-select" aria-label="Resolucion">
+                                                <option selected>xxx</option>
+                                            </select>
+                                            <br>
+                                        </div>
+
+                                        <div class="text-center my-5">
+                                            <button class="btn btn-secondary rounded-pill">Cancelar</button>
+                                            <button class="btn btn-success rounded-pill mx-3">Grabar</button>
+                                            <button type="button" class="btn btn-agregar rounded-pill"
+                                                data-bs-toggle="modal" data-bs-target="#generarFormulario">Generar
+                                                F.1266</button>
+                                        </div>
+                                    </article>
+                                </form>
+                                <!-- Modal -->
+                                <div class="modal fade modalExpediente" id="generarFormulario" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="generarFormularioLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="text-end">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="nuevoExpedienteLabel">
+                                                    Generación del formulario F.1266
+                                                </h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <label for="" class="form-label">Seleccione una carpeta</label>
+                                                    <input class="form-control" type="file" id="">
+                                                    <button type="button" class="btn btn-masInfo mt-2"
+                                                        data-bs-container="body" data-bs-toggle="popover"
+                                                        data-bs-placement="bottom" data-bs-trigger="focus"
+                                                        title="Requerimientos"
+                                                        data-bs-content="* Tipos de archivos permitidos : .pdf.  * Los archivos deben ser menores a 500KB.">
+                                                        <i class="fas fa-question-circle"></i> Más información
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary rounded-pill"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit"
+                                                    class="btn btn-success rounded-pill">Generar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin Modal -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION SEGUIMIENTO -->
+        <section id="accordionSeguimiento">
+            <div class="container accordion-style mb-5 pb-5">
+
+                <div class="accordion accordion-flush" id="seguimientoAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-seguimiento" aria-expanded="false"
+                                aria-controls="flush-seguimiento">
+                                Seguimiento
+                            </button>
+                        </h2>
+                        <div id="flush-seguimiento" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#seguimientoAccordion">
+                            <div class="accordion-body">
+                                <div class="text-end mt-2 mb-4">
+                                    <button class="btn btn-agregar rounded-pill" data-bs-toggle="modal"
+                                        data-bs-target="#nuevoSeguimiento">
+                                        Nuevo registro
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade modalExpediente" id="nuevoSeguimiento" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="nuevoSeguimientoLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="text-end">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">
+                                                    Para generar un nuevo registro completá el siguiente formulario:
+                                                </h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <label class="form-label" for="">Fecha</label>
+                                                    <input class="form-control" type="date" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Persona usuaria</label>
+                                                    <input class="form-control" type="text" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Comentario</label>
+                                                    <textarea class="form-control-area" id="" rows="5"></textarea>
+                                                    <br>
+                                                    <label class="form-label" for="">Estado</label>
+                                                    <select class="form-select" aria-label="estado">
+                                                        <option selected>xxx</option>
+                                                    </select>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary rounded-pill"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit"
+                                                    class="btn btn-success rounded-pill">Grabar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 table-responsive">
+                                    <table class="table table-responsive table-striped table-style">
+                                        <thead>
+                                            <tr>
+                                                <th>Fecha <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Comentario <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                <th>Persona usuaria <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                </th>
+                                                <th>Estado <i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Fecha xxx</td>
+                                                <td>Comentario xxx</td>
+                                                <td>Persona xxx</td>
+                                                <td class="color-verde fbold">Inscripto</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MANTENER EL LAYOUT PARA LOS MENU Y DROPDOWN -->
+        <div id="layoutblack" class="modal-backdrop fade d-none show"></div>
+
+    </main>
+
+
+    <footer id="footer-ministerioDesarrollo">
+        <div class="container">
+            <div class="row">
+                <div id="footerColUno" class="col-8 d-flex align-items-center">
+                    <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                </div>
+                <div id="footerColDos" class="col-4 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d741def0c1.js" crossorigin="anonymous"></script>
+    <script src="js/menulateral.js"></script>
+    <script src="js/expedientes.js"></script>
+    <script src="js/popover.js"></script>
+
+</body>
+
+</html>

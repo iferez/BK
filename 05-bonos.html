@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/icono-arg.css">
+
+    <title>Bonos</title>
+</head>
+
+<body>
+    <header id="header-ministerioDesarrollo">
+
+        <div class="container">
+            <div class="row">
+                <div id="headerColUno" class="col-4 d-flex align-items-center">
+                    <a href="#">
+                        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                    </a>
+                </div>
+                <div id="headerMid" class="col-4 d-flex align-items-center justify-content-center">
+                    <h2>BK 4.0</h2>
+                </div>
+                <div id="headerColDos" class="col-4 d-flex justify-content-end align-items-center userMenu">
+                    <a id="usuarioMenu" class="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li id="datosUsuario">
+                            <span class="fw-bold"> Nombre Usuario - </span>
+                            <span> 20-67465536-6 </span> <br>
+                            <span> usuario@produccion.gob.ar </span>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Cerrar la sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="menuHamburg">
+
+            <div class="dropend">
+                <button class="btn btn-hamburg" id="dropHamburg" data-bs-toggle="dropdown" data-bs-auto-close="false"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark d-none"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropHamburg">
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-house"></i></span> Inicio</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-building"></i></span> Empresas</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-folder-open"></i></span> Expedientes</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-share-from-square"></i></span> Envió novedades <br><span
+                                class="ms-4 ps-2">a AFIP</span></a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionPagos">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#pagosCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-dollar-sign"></i></span> Pagos
+                                    </button>
+                                </h2>
+                                <div id="pagosCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionPagos">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-brands fa-deezer"></i></span> Productos</a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionBonos">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#bonosCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-money-check-dollar"></i></span>
+                                        Bonos
+                                    </button>
+                                </h2>
+                                <div id="bonosCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionBonos">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-bell"></i></span> Alertas</a></li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-file-lines"></i></span> Reportes</a></li>
+
+                    <li>
+                        <div class="accordion accordion-flush" id="accordionConfig">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#configCollapse" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <span class="iconsmenu"><i class="fa-solid fa-gear"></i></span> Configuración
+                                    </button>
+                                </h2>
+                                <div id="configCollapse" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionConfig">
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                    <a class="dropdown-item ps-4" href="#">Action</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#"><span class="iconsmenu"><i
+                                    class="fa-solid fa-id-card"></i></span> Roles/Usuarios</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <section id="expedienteInicio">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <h2>Expediente</h2>
+                    <span>123457/XX</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="expedienteDatos" class="bg-light pt-4 pb-2">
+            <div class="container">
+
+                <article class="row">
+                    <div class="col-4">
+                        <p>Tipo: <span>Solicitud de bono</span></p>
+                    </div>
+                    <div class="col-4">
+                        <p>Fecha de inicio: <span>01/07/2022</span></p>
+                    </div>
+                    <div class="col-4">
+                        <p>Estado: <span class="color-ministerio fbold">Pendiente de aprobación</span></p>
+                    </div>
+                </article>
+
+                <article class="row">
+                    <div class="col-4">
+                        <p>CUIT: <span>30-12345678-9</span></p>
+                    </div>
+                    <div class="col-4">
+                        <p>Razón Social: <span>Empresa Modelo S.A.</span></p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION GENERALES BONOS -->
+        <section id="accordionDatosBonos">
+            <div class="container accordion-style mt-5">
+
+                <div class="accordion accordion-flush" id="datosBonosAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-generales-bonos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-datos-bonos" aria-expanded="false"
+                                aria-controls="flush-datos-bonos">
+                                Datos Generales
+                            </button>
+                        </h2>
+                        <div id="flush-datos-bonos" class="accordion-collapse collapse"
+                            aria-labelledby="flush-generales-bonos" data-bs-parent="#datosBonosAccordion">
+                            <div class="accordion-body px-5 py-4">
+
+                                <!-- CONTENEDOR DE DATOS GENERALES -->
+                                <div class="bg-gris">
+                                    <article class="row justify-content-center py-3 px-5">
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Tipo de expediente</label>
+                                            <select class="form-select" aria-label="">
+                                                <option selected>Seleccione</option>
+                                                <option value="1">---</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label" for="">Número de expediente</label>
+                                            <input id="" class="form-control" type="text" />
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label mt-4" for="">Fecha de inicio</label>
+                                            <input id="" class="form-control" type="date" />
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label mt-4" for="">Año calendario alcanzado por la
+                                                presentación</label>
+                                            <input id="" class="form-control" type="number" />
+                                        </div>
+
+                                        <p class="fsemibold mt-5 h6">Actividad principal: <span
+                                                class="ps-5">751025</span></p>
+                                        <hr class="mt-4">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-6 px-0">
+                                                <p class="fsemibold mt-4 h6">Inscripto en Registro PyME: <span
+                                                        class="ps-5">Si</span></p>
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <button class="btn btn-agregar rounded-pill">
+                                                    Verificar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <h4 class="fw-bold h6 mt-4">OTRAS VERIFICACIONES</h4>
+                                <div class="bg-gris mt-3">
+                                    <article class="row justify-content-center py-4 px-5">
+                                        <div class="row px-0">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <p class="fw-bold h6">REPSAL</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <label class="form-label" for="">Fecha de presentación</label>
+                                                <input class="form-control" type="date" name="" id="">
+                                                <br>
+                                            </div>
+                                            <div class="col-3">
+                                                <label class="form-label" for="">Número de IF</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-1">
+                                    <article class="row justify-content-center py-4 px-5">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <p class="fw-bold h6">Certificación contable porcentaje de facturación
+                                                declarado</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label" for="">Fecha de presentación</label>
+                                            <input class="form-control" type="date" name="" id="">
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label" for="">Número de IF</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                        </div>
+                                        <hr class="mt-4">
+
+                                        <div class="row justify-content-center">
+                                            <div class="col-5">
+                                                <p class="mb-0 fsemibold">Período declarado</p>
+                                                <label class="form-label" for="">Desde</label>
+                                                <input class="form-control" type="date" name="" id="">
+                                            </div>
+                                            <div class="col-5">
+                                                <br>
+                                                <label class="form-label" for="">Hasta</label>
+                                                <input class="form-control" type="date" name="" id="">
+                                            </div>
+                                            <div class="col-5">
+                                                <label class="form-label mt-4" for="">Total declarado Grupo 1</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                            <div class="col-5">
+                                                <label class="form-label mt-4" for="">Total declarado Grupo 2</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                            <div class="col-5">
+                                                <label class="form-label mt-4" for="">Total declarado Grupo 3</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                            <div class="col-5">
+                                                <label class="form-label mt-4" for="">Porcentaje facturación Art. 2.a
+                                                    Dto.379/01</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                            <div class="col-10">
+                                                <label class="form-label mt-4" for="">Total declarado</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                            <div class="col-10">
+                                                <label class="form-label mt-4" for="">Nombre y apellido del
+                                                    profesional</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                            <div class="col-10">
+                                                <label class="form-label mt-4" for="">Matrícula del profesional</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-1">
+                                    <article class="row justify-content-center py-4 px-5">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <p class="fw-bold h6">Certificación de ingeniero independiente sobre el
+                                                carácter de bienes de capital</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label" for="">Fecha de presentación</label>
+                                            <input class="form-control" type="date" name="" id="">
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label" for="">Número de IF</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                        </div>
+                                        <hr class="mt-4">
+
+                                        <div class="row justify-content-center">
+                                            <div class="col-10">
+                                                <label class="form-label" for="">Nombre y apellido del
+                                                    profesional</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                            <div class="col-10">
+                                                <br>
+                                                <label class="form-label" for="">Matrícula del profesional</label>
+                                                <input class="form-control" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="bg-gris mt-1">
+                                    <article class="row justify-content-center p-5 pb-4">
+                                        <div class="col-12">
+                                            <p class="fw-bold h6">Cumplimiento con las obligaciones impositivas y
+                                                previsionales</p>
+                                            <hr class="mt-4">
+                                            <p class="fsemibold h6">Fecha de última verificación: <span class="ps-5"> -
+                                                </span></p>
+                                            <p class="fsemibold h6">Registra deuda: <span class="ps-5"> - </span></p>
+                                            <div class="text-end">
+                                                <button class="btn btn-agregar rounded-pill">
+                                                    Verificar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-secondary rounded-pill">Cancelar</button>
+                                    <button class="btn btn-success rounded-pill ms-3">Grabar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MANTENER EL LAYOUT PARA LOS MENU Y DROPDOWN -->
+        <div id="layoutblack" class="modal-backdrop fade d-none show"></div>
+
+    </main>
+
+
+    <footer id="footer-ministerioDesarrollo">
+        <div class="container">
+            <div class="row">
+                <div id="footerColUno" class="col-8 d-flex align-items-center">
+                    <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                </div>
+                <div id="footerColDos" class="col-4 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d741def0c1.js" crossorigin="anonymous"></script>
+    <script src="js/menulateral.js"></script>
+    <script src="js/bonos.js"></script>
+    <script src="js/popover.js"></script>
+
+</body>
+
+</html>

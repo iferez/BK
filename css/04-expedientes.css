@@ -1,0 +1,117 @@
+#expedienteInicio {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#expedienteInicio h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #37bbed;
+}
+
+#expedienteInicio span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #37bbed;
+}
+
+#expedienteDatos p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#expedienteDatos span {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+
+.px-cards{
+  padding: 0px 11px;
+  border-bottom: 6px solid #37BBED;
+}
+
+.datos-style{
+  background-color: #37BBED;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 8px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.resultados-style{
+  background-color: #1072BB;
+  font-size: 18px;
+  font-weight: 600;
+  color: #dddddd;
+  padding: 6px;
+  border-radius: 0px 8px 0px 0px;
+  cursor: pointer;
+}
+
+.ventas-declaradas{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.mt-agregar{
+  margin-top: 32px;
+}
+
+/* TABLA CSS */
+
+#tablaDatos table {
+  border-spacing: 0px 10px !important;
+  border-collapse: separate !important;
+}
+
+#tablaDatos th {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px 10px;
+  border: none;
+}
+
+#tablaDatos td {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 10px;
+  white-space: nowrap;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#tablaDatos tr td:last-child  {
+  border-right: 1px solid #e1e1e1 !important;
+  border-radius: 0px 6px 6px 0px !important;
+}
+
+#tablaDatos tr td:first-child  {
+  border-radius: 6px 0px 0px 6px !important;
+}
+
+#tablaDatos .borde-gris {
+  border-left: 8px solid #999999 !important;
+}
+
+#tablaDatos .borde-verde {
+  border-left: 8px solid #2e7d33 !important;
+}
+
+#tablaDatos .borde-rojo {
+  border-left: 8px solid #c62828 !important;
+}
+
+.nowrap th{
+  white-space: nowrap !important;
+}
+/* Responsive */
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

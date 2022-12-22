@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Encode Sans", sans-serif;
+}
+
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+header img,
+footer img {
+  max-height: 48px;
+}
+
+/* HEADER */
+#header-ministerioDesarrollo {
+  height: 64px;
+  background: #37bbed;
+  box-shadow: 0px 1px 5px 2px #6c6c6c46 !important;
+  z-index: 999;
+}
+
+#headerColUno,
+#headerColDos {
+  height: 64px;
+}
+
+#headerMid {
+  height: 64px;
+}
+
+#headerMid h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffff;
+  margin: 0px;
+}
+
+/* USER MENU */
+
+#header-ministerioDesarrollo .userMenu .dropdown i {
+  font-size: 18px;
+  color: #1072bb;
+  padding: 4px 8px 5px 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+#header-ministerioDesarrollo .dropdown-menu {
+  background-color: #1072bb;
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  color: #ffff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#header-ministerioDesarrollo .dropdown-menu i {
+  font-size: 16px;
+}
+
+#datosUsuario {
+  background-color: #115f98;
+  padding: 6px 14px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#header-ministerioDesarrollo .dropdown-menu hr {
+  color: #ffff;
+  margin: 0px;
+}
+
+#header-ministerioDesarrollo .dropdown-menu li {
+  text-decoration: none;
+  color: #ffff;
+  padding: 10px 20px;
+}
+
+#header-ministerioDesarrollo .dropdown-menu li a {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#header-ministerioDesarrollo .dropdown-menu li a:hover {
+  color: #dddddd;
+}
+
+#inicioMenu,
+#solicitudesMenu,
+#usuarioMenu {
+  max-height: 32px !important;
+}
+
+/* MENU HAMBURGUESA */
+
+.indexup {
+  z-index: 1050;
+}
+
+#menuHamburg {
+  display: none;
+}
+
+#menuHamburg .btn-hamburg {
+  width: 44px;
+  height: 44px;
+  background-color: #333333;
+  color: #ffff;
+  padding: 0px;
+  border-radius: 8px;
+  transition: 0.4s;
+  z-index: 1050 !important;
+}
+
+#menuHamburg .btn-hamburg:hover {
+  background-color: #1072bb;
+  color: #ffff;
+  transition: 0.4s;
+}
+
+#menuHamburg .btn-hamburg i {
+  font-size: 32px;
+  color: #ffff;
+}
+
+#menuHamburg .dropdown-menu {
+  border-radius: 8px;
+  transform: translate(56px, 0px) !important;
+  z-index: 1050 !important;
+}
+
+#menuHamburg .dropdown-menu li:first-child{
+  border-top: none;
+}
+
+#menuHamburg .dropdown-menu li{
+  border-top: 1px dashed #7070704a;
+}
+
+#menuHamburg .dropdown-item {
+  font-size: 14px;
+  padding: 0.4rem 1rem;
+}
+
+#menuHamburg .accordion-button {
+  padding: 0.5rem 1rem;
+  color: #030303;
+  font-size: 14px;
+}
+
+#menuHamburg .accordion-button:focus {
+  color: #030303;
+  background-color: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#menuHamburg .accordion-button:not(.collapsed) {
+  color: #030303;
+  background-color: #ffff !important;
+  box-shadow: none !important;
+}
+
+#menuHamburg .accordion-button:hover {
+  background-color: #e9ecef;
+}
+
+#menuHamburg .accordion-button::after {
+  background-size: 0.6rem;
+  width: 1rem;
+  height: 0.6rem;
+}
+
+#menuHamburg a:focus {
+  background-color: #d7d7d7 !important;
+}
+
+#menuHamburg .iconsmenu {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  color: #0072bb;
+}
+
+#menuHamburg hr {
+  margin: 1px 0px;
+  opacity: 0.1;
+}
+
+/* FOOTER */
+
+#footer-ministerioDesarrollo {
+  height: 100px;
+  background: #37bbed;
+  z-index: 999;
+}
+
+#footerColUno,
+#footerColDos {
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  #header-ministerioDesarrollo .userMenu .dropdown i:hover {
+    color: #37bbed;
+    transition: 0.3s;
+  }
+
+  #headerMid h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #menuHamburg {
+    display: inline-block;
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .btn-userMenuHome {
+    font-size: 16px;
+  }
+
+  .btn-userMenuSolicitud {
+    font-size: 16px;
+  }
+  #menuHamburg {
+    margin-left: 6%;
+  }
+}

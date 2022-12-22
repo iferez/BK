@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 136 136">
+  <g id="icono_documento" transform="translate(-155 -192)">
+    <circle id="Elipse_314" data-name="Elipse 314" cx="68" cy="68" r="68" transform="translate(155 192)" fill="#f7f7f7"/>
+    <g id="icono-documento" transform="translate(174 210)">
+      <g id="Grupo_3042" data-name="Grupo 3042" transform="translate(0 0)">
+        <rect id="Rectángulo_3229" data-name="Rectángulo 3229" width="107" height="105" fill="none"/>
+      </g>
+      <g id="Grupo_3129" data-name="Grupo 3129" transform="translate(20.828 14.677)">
+        <g id="Trazado_2611" data-name="Trazado 2611" transform="translate(20.435 -4.57)" fill="none">
+          <path d="M20.56,18.565H33.506L20.56,4.75Z" stroke="none"/>
+          <path d="M 31.19833183288574 17.56494140625 L 21.55999946594238 7.279586315155029 L 21.55999946594238 17.56494140625 L 31.19833183288574 17.56494140625 M 33.50587844848633 18.56494140625 L 20.55999946594238 18.56494140625 L 20.55999946594238 4.750001430511475 L 33.50587844848633 18.56494140625 Z" stroke="none" fill="#37bbed"/>
+        </g>
+        <path id="Trazado_2612" data-name="Trazado 2612" d="M47.246,22.551a3.223,3.223,0,0,1-3.236-3.236V4.69H8.408A1.535,1.535,0,0,0,6.88,6.218v64.7a1.535,1.535,0,0,0,1.528,1.528h51.6a1.535,1.535,0,0,0,1.528-1.528V22.551Zm.629,30.267H20.006a2.907,2.907,0,1,1,0-5.814h27.87a2.907,2.907,0,1,1,0,5.814Zm0-13.665H20.006a2.907,2.907,0,1,1,0-5.814h27.87a2.907,2.907,0,0,1,0,5.814Z" transform="translate(-6.88 -4.69)" fill="none" stroke="#37bbed" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/icono-arg.css">
+
+    <title>Bonos inversión</title>
+</head>
+
+<body>
+    <header id="header-ministerioDesarrollo">
+
+        <div class="container">
+            <div class="row">
+                <div id="headerColUno" class="col-4 d-flex align-items-center">
+                    <a href="#">
+                        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                    </a>
+                </div>
+                <div id="headerMid" class="col-4 d-flex align-items-center justify-content-center">
+                    <h2>BK 4.0</h2>
+                </div>
+                <div id="headerColDos" class="col-4 d-flex justify-content-end align-items-center userMenu">
+                    <a id="usuarioMenu" class="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li id="datosUsuario">
+                            <span class="fw-bold"> Nombre Usuario - </span>
+                            <span> 20-67465536-6 </span> <br>
+                            <span> usuario@produccion.gob.ar </span>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Cerrar la sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- SECTION INVERSION -->
+        <section id="accordionInversion">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="inversionAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-inversion-bonos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-inversion" aria-expanded="false" aria-controls="flush-inversion">
+                                Inversión en I + D
+                            </button>
+                        </h2>
+                        <div id="flush-inversion" class="accordion-collapse collapse"
+                            aria-labelledby="flush-inversion-bonos" data-bs-parent="#inversionAccordion">
+                            <div class="accordion-body px-5 py-4">
+
+                                <article class="bg-gris row p-3 rounded">
+                                    <div class="col-12 form-check d-flex justify-content-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label h6 mb-0" for="flexCheckChecked">
+                                            Beneficio solicitado
+                                        </label>
+                                    </div>
+                                </article>
+
+                                <article class="row justify-content-center my-3">
+                                    <div class="col-10 row">
+                                        <div class="col-6">
+                                            <label class="form-label">Fecha de presentación</label>
+                                            <input class="form-control" type="date" name="" id="">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">N° IF</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="bg-gris row justify-content-center p-3 mt-4 rounded">
+                                    <div class="col-10 row py-4 px-0">
+                                        <div class="col-8">
+                                            <h5 class="h6 fw-bold">Detalle de comprobantes de inversión</h5>
+                                            <label class="form-label">Seleccionar archivo</label>
+                                            <input class="form-control" type="file" id="">
+                                            <button type="button" class="btn btn-masInfo mt-2" data-bs-container="body"
+                                                data-bs-toggle="popover" data-bs-placement="bottom"
+                                                data-bs-trigger="focus" title="Requerimientos"
+                                                data-bs-content="* Tipos de archivos permitidos : .xls .xlsx">
+                                                <i class="fas fa-question-circle"></i> Más información
+                                            </button>
+                                        </div>
+                                        <div class="col-12 text-end">
+                                            <button class="btn btn-agregar rounded-pill">Importar</button>
+                                        </div>
+                                    </div>
+                                </article>
+
+
+
+                                <div class="shadow-md px-cards my-5">
+                                    <article class="row text-center">
+                                        <div id="card-comprobantes-bonos" class="col-6 datos-style">
+                                            Comprobantes
+                                        </div>
+                                        <div id="card-proyectos-bonos" class="col-6 resultados-style">
+                                            Proyectos
+                                        </div>
+                                    </article>
+
+                                    <!-- CONTENEDOR COMPROBANTES -->
+                                    <div id="contenido-comprobantes-bonos">
+                                        <article class="row mb-5">
+                                            <div class="col-12 table-responsive mt-5 mb-3">
+
+                                                <table class="table table-responsive table-striped table-style nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Fecha <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Tipo <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Punto de venta <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>N° de comprobante <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>CUIT proveedor <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Valor neto total en pesos<i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Monto total en pesos<i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Monto aprobado<i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>%<i class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Proyecto<i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td> xx Fecha</td>
+                                                            <td> xx Tipo</td>
+                                                            <td> xx Punto de venta</td>
+                                                            <td> xx N° de comprobante</td>
+                                                            <td> xx CUIT proveedor </td>
+                                                            <td> xx Valor neto total en pesos</td>
+                                                            <td> xx Monto total en pesos</td>
+                                                            <td> xx Monto aprobado</td>
+                                                            <td> xx %</td>
+                                                            <td> xx Proyecto</td>
+                                                            <td><a class="px-4" data-bs-toggle="modal"
+                                                                    data-bs-target="#detalleComprobante"><i
+                                                                        class="fa-solid fa-eye"></i></a></td>
+                                                            <!-- AQUI REALIZA EL LLAMADO AL MODAL DE DETALLES -->
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <p id="contadorTabla">Mostrando registros del 1 al 5 de un total de <span
+                                                    class="fbold"> 20
+                                                    registros</span>.</p>
+
+                                            <!-- Paginador estatico -->
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center mt-3">
+                                                    <li class="page-item px-2">
+                                                        <a class="page-link bg-ministerio-gris" href="#"
+                                                            aria-label="Previous">
+                                                            <span aria-hidden="true">
+                                                                <i class="fa-solid fa-angle-left"></i> </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item px-2"><a
+                                                            class="page-link rounded-3 bg-filtro text-white"
+                                                            href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item px-2"><a class="page-link rounded-3"
+                                                            href="#">2</a></li>
+                                                    <li class="page-item px-2"><a class="page-link rounded-3"
+                                                            href="#">3</a></li>
+                                                    <li class="page-item px-2">
+                                                        <a class="page-link border-0" href="#" aria-label="Next">
+                                                            <span aria-hidden="true"><i
+                                                                    class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                        </article>
+                                    </div>
+
+                                    <!-- MODAL DETALLE COMPROBANTE -->
+                                    <div class="modal fade modalExpediente" id="detalleComprobante"
+                                        data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                        aria-labelledby="detalleComprobanteLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl">
+                                            <div class="modal-content">
+                                                <div class="text-end">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">
+                                                        Comprobante Inversión I+D
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body table-responsive">
+                                                    <table class="table table-striped table-style">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Concepto</th>
+                                                                <th>Declarado</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> Fecha </td>
+                                                                <td> 07/052022 </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Tipo </td>
+                                                                <td> Factura A </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> Comprobante </td>
+                                                                <td> 00010 </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <form action="">
+                                                        <label class="form-label mt-4">Monto aprobado</label>
+                                                        <input class="form-control w-50" type="number" name="" id="">
+
+                                                        <label class="form-label mt-4" for="">Observaciones</label>
+                                                        <textarea class="form-control-area" id="" rows="5"></textarea>
+
+                                                        <div class="text-end my-4">
+                                                            <button type="button"
+                                                                class="btn btn-secondary rounded-pill">Cancelar</button>
+                                                            <button type="submit"
+                                                                class="btn btn-success rounded-pill ms-4">Grabar</button>
+                                                        </div>
+                                                    </form>
+
+                                                    <h5 class="mt-5 mb-3 fw-bold">Items</h5>
+                                                    <table class="table table-striped table-style">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Código</th>
+                                                                <th>Descripción</th>
+                                                                <th>Cantidad</th>
+                                                                <th>Valor unitario</th>
+                                                                <th>Valor neto</th>
+                                                                <th>Total</th>
+                                                                <th>Observaciones</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>xx Código</td>
+                                                                <td>xx Descripción</td>
+                                                                <td>xx Cantidad</td>
+                                                                <td>xx Valor unitario</td>
+                                                                <td>xx Valor neto</td>
+                                                                <td>xx Total</td>
+                                                                <td>xx Observaciones</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <p id="contadorTabla">Mostrando registros del 1 al 5 de un total de
+                                                        <span class="fbold"> 20
+                                                            registros</span>.
+                                                    </p>
+
+                                                    <!-- Paginador estatico -->
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination justify-content-center mt-3">
+                                                            <li class="page-item px-2">
+                                                                <a class="page-link bg-ministerio-gris" href="#"
+                                                                    aria-label="Previous">
+                                                                    <span aria-hidden="true">
+                                                                        <i class="fa-solid fa-angle-left"></i> </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="page-item px-2"><a
+                                                                    class="page-link rounded-3 bg-filtro text-white"
+                                                                    href="#">1</a>
+                                                            </li>
+                                                            <li class="page-item px-2"><a class="page-link rounded-3"
+                                                                    href="#">2</a></li>
+                                                            <li class="page-item px-2"><a class="page-link rounded-3"
+                                                                    href="#">3</a></li>
+                                                            <li class="page-item px-2">
+                                                                <a class="page-link border-0" href="#"
+                                                                    aria-label="Next">
+                                                                    <span aria-hidden="true"><i
+                                                                            class="fa-solid fa-angle-right"></i></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CONTENEDOR PROYECTOS -->
+                                    <div id="contenido-proyectos-bonos" class="d-none">
+                                        <article class="row mb-5">
+                                            <div class="col-12 table-responsive mt-5 mb-3">
+
+                                                <table class="table table-responsive table-striped table-style nowrap">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Nombre <i class="fa-solid fa-arrow-down-short-wide"></i>
+                                                            </th>
+                                                            <th>Descripción <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Aprobado <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Monto de proyecto <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>% avance s/monto presentado <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Monto aprobado<i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>% avance s/monto aprobado <i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Cant compr.<i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                            <th>Observaciones<i
+                                                                    class="fa-solid fa-arrow-down-short-wide"></i></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>2</td>
+                                                            <td>3</td>
+                                                            <td>4</td>
+                                                            <td>5</td>
+                                                            <td>6</td>
+                                                            <td>7</td>
+                                                            <td>8</td>
+                                                            <td>9</td>
+                                                            <td>
+                                                                <div class="dropstart">
+                                                                    <button type="button" class="btn"
+                                                                        id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                        <i
+                                                                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                                                                    <ul class="dropdown-menu"
+                                                                        aria-labelledby="dropdownMenuLink">
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                                Aprobar</a></li>
+                                                                        <li><a class="dropdown-item" href="#">
+                                                                                Desaprobar</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <p id="contadorTabla">Mostrando registros del 1 al 5 de un total de <span
+                                                    class="fbold"> 20
+                                                    registros</span>.</p>
+
+                                            <!-- Paginador estatico -->
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center mt-3">
+                                                    <li class="page-item px-2">
+                                                        <a class="page-link bg-ministerio-gris" href="#"
+                                                            aria-label="Previous">
+                                                            <span aria-hidden="true">
+                                                                <i class="fa-solid fa-angle-left"></i> </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item px-2"><a
+                                                            class="page-link rounded-3 bg-filtro text-white"
+                                                            href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item px-2"><a class="page-link rounded-3"
+                                                            href="#">2</a></li>
+                                                    <li class="page-item px-2"><a class="page-link rounded-3"
+                                                            href="#">3</a></li>
+                                                    <li class="page-item px-2">
+                                                        <a class="page-link border-0" href="#" aria-label="Next">
+                                                            <span aria-hidden="true"><i
+                                                                    class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <!-- BLOQUE FINAL BENEFICIO -->
+                                <article class="bg-gris row justify-content-center rounded-top mt-5 p-3">
+                                    <div class="col-10 row py-4 px-0">
+                                        <div class="col-6 mb-3">
+                                            <p class="h6">Sumatoria de inversiones declaradas:</span>
+                                        </div>
+                                        <div class="col-6 mb-3 text-end">
+                                            <span class="h6">1.000.000,00</span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <p class="h6">Sumatoria de inversiones reconocidas:</span>
+                                        </div>
+                                        <div class="col-6 mb-3 text-end">
+                                            <span class="h6">1.000.000,00</span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <p class="h6">Porcentaje a aplicar: <span class="ps-3"> 40% </span></span>
+                                        </div>
+                                        <div class="col-6 mb-3 text-end">
+                                            <p class="h6">Beneficio determinado: <span class="ps-3">
+                                                    400.000,00</span></span>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <p class="h6">Tope de reintegro: <span class="ps-3"> 61% </span></span>
+                                        </div>
+                                        <div class="col-6 mb-3 text-end">
+                                            <p class="h6">Monto de tope reintegro: <span class="ps-3">
+                                                    400.000,00</span></span>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="h6">Aplica tope: <span class="ps-3"> Si</span></span>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="bg-azul row justify-content-center p-3 rounded-bottom">
+                                    <div class="col-10 row px-0">
+                                        <div class="col-6">
+                                            <span class="h5 text-white">Beneficio b.1):</span>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="h5 text-white">242.424,24</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-secondary rounded-pill">Cancelar</button>
+                                    <button class="btn btn-success rounded-pill ms-3">Grabar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="footer-ministerioDesarrollo">
+        <div class="container">
+            <div class="row">
+                <div id="footerColUno" class="col-8 d-flex align-items-center">
+                    <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                </div>
+                <div id="footerColDos" class="col-4 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d741def0c1.js" crossorigin="anonymous"></script>
+    <script src="js/bonos-inversion.js"></script>
+    <script src="js/popover.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@import "0-variables.css";
+@import "00-header.css";
+@import "01-home.css";
+@import "02-dashboard.css";
+@import "03-empresas.css";
+@import "04-expedientes.css";
+@import "05-bonos.css";
+
+@import "99-alertas.css";
+

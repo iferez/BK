@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/icono-arg.css">
+
+    <title>Bonos reintegros</title>
+</head>
+
+<body>
+    <header id="header-ministerioDesarrollo">
+
+        <div class="container">
+            <div class="row">
+                <div id="headerColUno" class="col-4 d-flex align-items-center">
+                    <a href="#">
+                        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                    </a>
+                </div>
+                <div id="headerMid" class="col-4 d-flex align-items-center justify-content-center">
+                    <h2>BK 4.0</h2>
+                </div>
+                <div id="headerColDos" class="col-4 d-flex justify-content-end align-items-center userMenu">
+                    <a id="usuarioMenu" class="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li id="datosUsuario">
+                            <span class="fw-bold"> Nombre Usuario - </span>
+                            <span> 20-67465536-6 </span> <br>
+                            <span> usuario@produccion.gob.ar </span>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Cerrar la sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- SECTION REINTEGROS -->
+        <section id="accordionReintegros">
+            <div class="container accordion-style">
+
+                <div class="accordion accordion-flush" id="reintegrosAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-reintegros-bonos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-reintegros" aria-expanded="false"
+                                aria-controls="flush-reintegros">
+                                Reintegros exportación
+                            </button>
+                        </h2>
+                        <div id="flush-reintegros" class="accordion-collapse collapse"
+                            aria-labelledby="flush-reintegros-bonos" data-bs-parent="#reintegrosAccordion">
+                            <div class="accordion-body px-5 py-4">
+
+                                <article class="bg-gris row p-3 rounded">
+                                    <div class="col-12 form-check d-flex justify-content-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label h6 mb-0" for="flexCheckChecked">
+                                            Beneficio solicitado
+                                        </label>
+                                    </div>
+                                </article>
+
+                                <article class="row justify-content-center my-3">
+                                    <div class="col-10 row">
+                                        <div class="col-6">
+                                            <label class="form-label">Fecha de presentación</label>
+                                            <input class="form-control" type="date" name="" id="">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">N° IF</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="bg-gris row justify-content-center p-3 mt-4 rounded-top">
+                                    <div class="col-10 row py-4 px-0">
+                                        <div class="col-6">
+                                            <label class="form-label">Total de reintegros de exportaciones por BK</label>
+                                            <input class="form-control" type="text" name="" id="">
+                                        </div>
+                                        <div class="col-6 d-flex justify-content-between">
+                                            <button class="btn btn-agregar rounded-pill mt-agregar">Consultar</button>
+                                            <button class="btn btn-agregar rounded-pill mt-agregar" disabled>Ver detalle</button>
+                                        </div>
+                                        <div class="col-6 mt-5">
+                                            <p class="h6">Porcentaje a aplicar: <span class="ps-3">40%</span></p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="bg-azul row justify-content-center p-3 rounded-bottom">
+                                    <div class="col-10 row px-0">
+                                        <div class="col-6">
+                                            <span class="h5 text-white">Beneficio b.3):</span>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="h5 text-white">600.000,00</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-secondary rounded-pill">Cancelar</button>
+                                    <button class="btn btn-success rounded-pill ms-3">Grabar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MANTENER EL LAYOUT PARA LOS MENU Y DROPDOWN -->
+        <div id="layoutblack" class="modal-backdrop fade d-none show"></div>
+
+    </main>
+
+
+    <footer id="footer-ministerioDesarrollo">
+        <div class="container">
+            <div class="row">
+                <div id="footerColUno" class="col-8 d-flex align-items-center">
+                    <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                </div>
+                <div id="footerColDos" class="col-4 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d741def0c1.js" crossorigin="anonymous"></script>
+    <script src="js/popover.js"></script>
+
+</body>
+
+</html>

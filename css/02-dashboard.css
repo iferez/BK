@@ -1,0 +1,106 @@
+/* SECTION INICIO */
+
+#dashboardInicio {
+  padding-top: 40px;
+  padding-bottom: 140px;
+}
+
+#dashboardInicio h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/*CARDS*/
+
+#dashboardInicio .card a {
+  text-decoration: none;
+}
+
+#dashboardInicio .card {
+  background-color: #0072bb;
+  transition: 0.2s;
+  border: none;
+}
+
+#dashboardInicio .card:hover {
+  background-color: #0073bb98;
+  transition: 0.3s;
+}
+
+#dashboardInicio .card-header {
+  height: 100px;
+  border-bottom: none;
+}
+
+#dashboardInicio .card-body {
+  height: 70px;
+  background-color: #ffff;
+  padding: 0rem;
+}
+
+#dashboardInicio .card-body h5 {
+  padding: 0.5rem;
+}
+
+#dashboardInicio .card-footer {
+  padding: 4px;
+  border-top: none;
+}
+
+#dashboardInicio .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #030303;
+  margin: 0px;
+}
+
+#dashboardInicio .dropdown-menu li{
+  border-top: 1px dashed #7070704a;
+}
+
+#dashboardInicio .card i {
+  font-size: 70px;
+}
+
+#dashboardInicio .card a:focus {
+  background-color: #dddddd;
+}
+
+#dashboardInicio .btn-title {
+  width: 100%;
+  min-width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  text-align: start;
+  padding: 0.5rem;
+}
+
+#dashboardInicio .btn-title i{
+  font-size: 16px !important;
+  
+}
+
+#dashboardInicio .btn-title:focus {
+  box-shadow: none;
+}
+
+#dashboardInicio .card .dropdown-menu {
+  width: 100% !important;
+  border: none !important;
+  border-bottom: 6px solid #0072bb !important;
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1400px) {
+}

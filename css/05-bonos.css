@@ -1,0 +1,79 @@
+.facturacion-resultados th {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+/* TABLA CSS */
+#tablaVentasAnuales table {
+  border-spacing: 0px 10px !important;
+  border-collapse: separate !important;
+}
+
+#tablaVentasAnuales th {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px 10px;
+  border: none;
+}
+
+#tablaVentasAnuales td {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 10px;
+  white-space: nowrap;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#tablaVentasAnuales tr td:last-child {
+  border-right: 1px solid #e1e1e1 !important;
+  border-radius: 0px 6px 6px 0px !important;
+}
+
+#tablaVentasAnuales tr td:first-child {
+  border-radius: 6px 0px 0px 6px !important;
+}
+
+#tablaVentasAnuales .borde-gris {
+  border-left: 8px solid #999999 !important;
+}
+
+#tablaVentasAnuales .borde-verde {
+  border-left: 8px solid #2e7d33 !important;
+}
+
+#tablaVentasAnuales .borde-rojo {
+  border-left: 8px solid #c62828 !important;
+}
+
+.sin-bordes th{
+  font-size: 16px ;
+}
+
+.sin-bordes td{
+  font-size: 16px ;
+}
+
+.sin-bordes td {
+  border: none !important;
+}
+
+.separador {
+  background-image: linear-gradient(
+    to right,
+    rgba(84, 84, 84, 0.509) 40%,
+    rgba(255, 255, 255, 0) 20%
+  );
+  background-size: 22px 1px;
+  background-repeat: repeat-x;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 4px;
+}
+
+.separador-margin {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 4px;
+}

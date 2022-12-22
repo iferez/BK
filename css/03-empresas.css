@@ -1,0 +1,175 @@
+#empresasInicio {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#empresasInicio h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #37bbed;
+}
+
+/* FILTROS */
+
+#empresasFiltros label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* TABLA CSS */
+
+#mostrarRegistrosDetalle {
+  width: 50px;
+  height: 40px;
+  margin: 0px 6px;
+  text-align: center;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.table-style th {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px 10px;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.table-style th i{
+color: #999999;
+padding-left: 10px;
+}
+
+.table-style td {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 10px;
+  white-space: nowrap;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.table-style tr td i {
+  text-decoration: none;
+  color: #1072bb;
+  font-size: 20px;
+}
+
+.table-style tr td a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.table-style .btn {
+padding: 0px;
+}
+
+.table-style .dropdown-menu {
+  background-color: #1072bb;
+  color: #ffff;
+  padding: 0px;
+}
+
+.table-style .dropdown-menu i {
+  color: #ffff;
+  font-size: 12px;
+  padding-right: 6px;
+}
+
+.table-style .dropdown-menu a {
+  color: #ffff;
+}
+
+.table-style .dropdown-menu a:hover {
+  background-color: #2385cf;
+}
+
+.table-style .dropdown-menu a:focus {
+  background-color: #1072bb;
+}
+
+#contadorTabla {
+  font-size: 14px;
+}
+
+/* MODAL EXPEDIENTE */
+
+.modalExpediente .modal-header {
+  border: none;
+  padding: 0px 40px;
+}
+
+.modalExpediente .btn-close{
+  padding: 20px 40px 10px 0px;
+}
+
+.modalExpediente .modalTitulo h5 {
+  padding: 0px 10px 20px 10px;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modalExpediente .modal-body {
+  font-size: 14px;
+  border: none;
+  padding: 40px 40px 30px 40px;
+}
+
+.modalExpediente .modal-footer {
+  border: none;
+  padding: 10px 40px 40px 40px ;
+}
+
+.modalExpediente .modal-content {
+  border-radius: 10px;
+}
+
+
+/* ACORDEONES */
+
+.accordion-style .accordion{
+ border: 1px solid #707070;
+ margin-bottom: 10px;
+}
+
+.accordion-style .accordion-button {
+  color: #707070;
+  font-size: 18px !important;
+  font-weight: 500;
+}
+
+.accordion-style .accordion-button:not(.collapsed) {
+  color: #37bbed;
+  background-color: #f7f7f7;
+  box-shadow: none;
+}
+
+.accordion-style .accordion-collapse{
+  transition: 0.6s ease-in-out;
+}
+
+.accordion-style .accordion-button:focus {
+  z-index: 3;
+  border-color: #f7f7f7;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-style .accordion-button::after {
+  transition: transform .8s ease-in-out;
+}
+
+.accordion-style .accordion-body{
+  font-size: 14px !important;
+}
+
+
+/* Responsive */
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
