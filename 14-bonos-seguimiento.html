@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/icono-arg.css">
+
+    <title>Bonos seguimiento</title>
+</head>
+
+<body>
+    <header id="header-ministerioDesarrollo">
+
+        <div class="container">
+            <div class="row">
+                <div id="headerColUno" class="col-4 d-flex align-items-center">
+                    <a href="#">
+                        <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                    </a>
+                </div>
+                <div id="headerMid" class="col-4 d-flex align-items-center justify-content-center">
+                    <h2>BK 4.0</h2>
+                </div>
+                <div id="headerColDos" class="col-4 d-flex justify-content-end align-items-center userMenu">
+                    <a id="usuarioMenu" class="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li id="datosUsuario">
+                            <span class="fw-bold"> Nombre Usuario - </span>
+                            <span> 20-67465536-6 </span> <br>
+                            <span> usuario@produccion.gob.ar </span>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-from-bracket me-3"></i> Cerrar la sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- SECTION SEGUIMIENTO -->
+        <section id="accordionSeguimiento">
+            <div class="container accordion-style mb-5 pb-5">
+
+                <div class="accordion accordion-flush" id="seguimientoAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-bonos-seguimiento">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-seguimiento" aria-expanded="false"
+                                aria-controls="flush-seguimiento">
+                                Seguimiento
+                            </button>
+                        </h2>
+                        <div id="flush-seguimiento" class="accordion-collapse collapse"
+                            aria-labelledby="flush-bonos-seguimiento" data-bs-parent="#seguimientoAccordion">
+                            <div class="accordion-body">
+                                <div class="col-10 offset-1 text-end mt-2 mb-4">
+                                    <button class="btn btn-agregar rounded-pill" data-bs-toggle="modal"
+                                        data-bs-target="#nuevoSeguimiento">
+                                        Nuevo registro
+                                    </button>
+                                </div>
+                                <!-- MODAL NUEVO REGISTRO -->
+                                <div class="modal fade modalExpediente" id="nuevoSeguimiento" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="nuevoSeguimientoLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="text-end">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">
+                                                    Para generar un nuevo registro completá el siguiente formulario:
+                                                </h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <label class="form-label" for="">Fecha</label>
+                                                    <input class="form-control" type="date" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Persona usuaria</label>
+                                                    <input class="form-control" type="text" name="" id="">
+                                                    <br>
+                                                    <label class="form-label" for="">Comentario</label>
+                                                    <textarea class="form-control-area" id="" rows="5"></textarea>
+                                                    <br>
+                                                    <label class="form-label" for="">Estado</label>
+                                                    <select class="form-select" aria-label="estado">
+                                                        <option selected>Pendiente de inscripción</option>
+                                                    </select>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary rounded-pill"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="submit"
+                                                    class="btn btn-success rounded-pill">Grabar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-10 offset-1 table-responsive table-scroll mt-5 mb-3">
+                                    <table class="table table-striped table-style">
+                                        <thead>
+                                            <tr>
+                                                <th>Fecha</th>
+                                                <th>Comentario</th>
+                                                <th>Usuario</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>20/05/2022</td>
+                                                <td>Creación del expediente</td>
+                                                <td>Gómez, Luis</td>
+                                                <td>Pendiente inscripción</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="footer-ministerioDesarrollo">
+        <div class="container">
+            <div class="row">
+                <div id="footerColUno" class="col-8 d-flex align-items-center">
+                    <img src="img/logoMinisterioBlanco.svg" class="logoHeader" alt="Logo Ministerio">
+                </div>
+                <div id="footerColDos" class="col-4 text-end">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d741def0c1.js" crossorigin="anonymous"></script>
+    <script src="js/popover.js"></script>
+
+</body>
+
+</html>

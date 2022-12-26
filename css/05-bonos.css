@@ -58,6 +58,12 @@
   border: none !important;
 }
 
+.table-scroll {
+  display: block;
+  height: 200px;
+  overflow-y: auto;
+}
+
 .separador {
   background-image: linear-gradient(
     to right,
@@ -76,4 +82,33 @@
   margin-top: 30px;
   margin-bottom: 10px;
   margin-left: 4px;
+}
+
+/* TARJETAS ENVIO A AFIP */
+
+.activo-style{
+  background-color: #37BBED;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 8px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.desactivo-style{
+  background-color: #1072BB;
+  font-size: 18px;
+  font-weight: 600;
+  color: #dddddd;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.borde-redondeado{
+  border-radius: 0px 8px 0px 0px;
+}
+
+.margin-parrafos p{
+  margin-top: 32px;
 }
